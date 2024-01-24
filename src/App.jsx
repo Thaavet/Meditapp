@@ -4,7 +4,7 @@ import Navbar from './navbar.jsx';
 import Timer from './timer.jsx';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About.jsx';
-import { Home } from './pages/home.jsx';
+import { Home } from './pages/Home.jsx';
 import { Contacts } from './pages/Contacts.jsx';
 import Footer from './footer.jsx';
 
