@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <nav className='nav'>
         <div className="left-section">
-          <Link to="/" ><img className="nav-logo" src="../src/images/logo.png" alt="logo" /> <h1 className='site-title'>Meditapp</h1></Link>
+          <Link to="/" ><img className="nav-logo" src="../dist/assets/logo.png" alt="logo" /> <h1 className='site-title'>Meditapp</h1></Link>
           <div className="nav-menu" onClick={() => setMenuOpen(!menuOpen)}>
             <span></span>
             <span></span>
