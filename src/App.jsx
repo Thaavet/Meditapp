@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './app.css';
+import './App.css';
 import Navbar from './navbar.jsx';
 import Timer from './timer.jsx';
 import { Routes, Route } from 'react-router-dom';
