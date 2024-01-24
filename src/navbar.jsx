@@ -1,16 +1,32 @@
-import { useState } from "react";
-import {View, ScrollView, SafeAreaView} from "react-native";
-import {Stack, useRouter} from "expo-router";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import {COLORS, icons, images, SIZES} from "../constants";
-import {Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome} from "../components";
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const Home = () => {
-    const router = useRouter();
-
-    return (
-        <SafeAreaView style={{flex: 1, backgroundColor: COLORS.lightWhite}}> <Text>Home</Text> </SafeAreaView>
-    )
+  return (
+    <>
+      <nav className='nav'>
+        <div className="left-section">
+          <Link to="/" ><img className="nav-logo" src="../src/images/logo.png" alt="logo" /> <h1 className='site-title'>Meditapp</h1></Link>
+          <div className="nav-menu" onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul className={menuOpen ? 'open' : ''}>
+          <li>
+            <Link to={"/about"}>About Meditation</Link>
+          </li>
+          <li>
+            <Link to="/timer">Timer</Link>
+          </li>
+          <li>
+            <Link to="/contacts"> Contacts </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
 }
-
-useState
