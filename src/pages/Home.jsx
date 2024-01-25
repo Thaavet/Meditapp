@@ -4,7 +4,7 @@ export const Home = () => {
     <div className='home-container'>
 
      <div className='why'> 
-     <img className='banner' src={process.env.PUBLIC_URL + 'assets/meditations.png'} alt="meditation" />
+     <img className='banner' src={process.env.PUBLIC_URL + 'dist/assets/meditations.png'} alt="meditation" />
       <h3> Why Meditation </h3>
      Meditation is an activity that can bring many benefits, such as reducing stress, improving concentration and mood, and increasing self-awareness. For this reason, it is important to create a website that facilitates meditation and offers useful features such as a customizable timer.
 
