@@ -19,9 +19,9 @@ function SettingsMenu(props) {
 
   return (
     <div>
-      <h2>Impostazioni</h2>
+      <h2>Settings</h2>
       <label>
-        Durata della sessione : {durationInput} (minuti):
+        Duration : {durationInput} (minutes):
         <input type="range" min="1" max="90" value={durationInput} onChange={handleChangeDuration} />
       </label>
       
