@@ -24,7 +24,7 @@ function SettingsMenu(props) {
         Duration : {durationInput} (minutes):
         <input type="range" min="1" max="90" value={durationInput} onChange={handleChangeDuration} />
       </label>
-      
+      <diV></diV>
       <Backbutton onClick={onCloseSettings}/>
       <Confirmbutton onClick={handleSaveDuration}/>
     </div>
