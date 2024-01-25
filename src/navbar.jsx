@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../images/logo.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     <>
       <nav className='nav'>
         <div className="left-section">
-          <Link to="/" ><img className="nav-logo" src="../dist/assets/logo.png" alt="logo" /> <h1 className='site-title'>Meditapp</h1></Link>
+          <Link to="/" ><img className="nav-logo" src={logo} alt="logo" /> <h1 className='site-title'>Meditapp</h1></Link>
           <div className="nav-menu" onClick={() => setMenuOpen(!menuOpen)}>
             <span></span>
             <span></span>

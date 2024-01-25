@@ -1,7 +1,7 @@
 import React from 'react'
-import thumbnail_1 from '../images/thumbnail_1.jpg';
-import thumbnail_2 from '../images/thumbnail_2.jpg';
-import thumbnail_3 from '../images/thumbnail_3.jpg';
+import thumbnail_1 from '../images/meditations.png';
+import thumbnail_2 from '../images/screen.png';
+import thumbnail_3 from '../images/screen3.png';
 export const Home = () => {
   return (
     <div className='home-container'>
