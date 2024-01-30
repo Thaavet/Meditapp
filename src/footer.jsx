@@ -5,6 +5,7 @@ import { faFacebookF, faInstagram, faLinkedinIn, faGithub } from '@fortawesome/f
 const Footer = () => {
   return (
     <footer id="footer">
+        <div className="footer-div">
         <div className='footer-text'>
         <h3>Follow us:</h3>
         </div>
@@ -27,6 +28,7 @@ const Footer = () => {
      >
        <FontAwesomeIcon icon={faGithub} />
      </a>
+        </div>
         </div>
       </footer>
   )
