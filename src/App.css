@@ -1,4 +1,6 @@
 #root {
+  border: 0;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,7 +8,10 @@
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
-  position: relative;}
+  position: relative;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;}
 
 body {
   margin: 0;
