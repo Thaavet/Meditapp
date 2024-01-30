@@ -1,42 +1,39 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+ const ContactForm = () => {
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // implementazione per l'invio del form
-  }
+
+    emailjs.sendForm('service_cswcxye', 'template_b8vg4d9', form.current, 'GFOMp9Jvomjj0tYBH')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
-    <form className='contact-form' onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-
-      <label htmlFor="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <label htmlFor="message">Message:</label>
-      <textarea className='message-box'
-        id="message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
-
-      <button className='submit-btn' type="submit">Submit</button>
+    <>
+    <div className="div contact-form">
+    <form ref={form} onSubmit={sendEmail}>
+     <div className="div form-name">
+      <label>Name</label>
+      <input type="text" name="user_name" /> </div>
+      <div className="div form-email">
+      <label>Email</label>
+      <input type="email" name="user_email" /> </div>
+      <div className="form-message">
+      <label>Message</label>
+      <textarea className="form-textarea" rows="25" cols="50" name="message" />
+      <div className="div form-send">
+      <input type="submit" value="Send" /> </div>
+      </div>
     </form>
+    </div>
+    </>
   );
 };
 
