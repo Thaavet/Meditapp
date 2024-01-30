@@ -63,8 +63,8 @@ nav h1{
 nav .nav-menu {
   display: none;
   position: absolute;
-  top: 5rem;
-  right: 15px;
+  top: 5.3rem;
+  right: 50px;
   justify-content: space-between;
   flex-direction: column;
   width: 2.25rem;
@@ -239,8 +239,8 @@ height: auto;
   }
  
   footer{
-    position: absolute;
-    bottom: 0;
+    position: absolute; 
+    bottom: 10px;
     width: 100%;
     height: 2.5rem;
   }
@@ -267,88 +267,38 @@ height: auto;
     margin-top: 100px;
   }
 
-  .message-box {
+
+ 
+  .contact-form{
     width: 100%;
-    height: 200px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    resize: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-name, .form-email, .form-message, .form-send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
   }
   
-  .contact-form{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 15px;
-    resize: none;
-  }
-
-  .form-name {
-    min-width: 150px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 15px;
-    resize: none;
-  }
-
-  .form-email {
-    min-width: 150px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 15px;
-    resize: none;
-  }
-
-  .form-message{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 15px;
-    resize: none;
-  }
-
-  .form-textarea{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 15px;
-    resize: none;
-  }
-
-  .form-send
-{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px;
-    padding: 30px;
-    resize: none;
-  }
 
 
   

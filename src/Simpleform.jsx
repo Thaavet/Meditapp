@@ -17,7 +17,7 @@ import emailjs from '@emailjs/browser';
 
   return (
     <>
-    <div className="div contact-form">
+    <div className="contact-form">
     <form ref={form} onSubmit={sendEmail}>
      <div className="div form-name">
       <label>Name</label>
@@ -27,7 +27,7 @@ import emailjs from '@emailjs/browser';
       <input type="email" name="user_email" /> </div>
       <div className="form-message">
       <label>Message</label>
-      <textarea className="form-textarea" rows="25" cols="50" name="message" />
+      <textarea className ="form-textarea" rows="10" cols="30" name="message" />
       <div className="div form-send">
       <input type="submit" value="Send" /> </div>
       </div>
