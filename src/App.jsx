@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import './components/buttons/buttons.css';
 import Navbar from './components/navbar/navbar.jsx';
-import Timer from './components/timer/timer.jsx';
+import { Timerpage } from './pages/TimerPage.jsx';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About.jsx';
 import { Home } from './pages/Home.jsx';
@@ -17,7 +17,7 @@ const [showsettings, setshowsettings] = useState(true);
   <Navbar />
   <Routes>
     <Route path="/about" element={<About />} />
-    <Route path="/timer" element={<Timer />} />
+    <Route path="/timer" element={< Timerpage />} />
     <Route path="/" element={<Home />} />
     <Route path="/contacts" element={<Contacts />} />
   </Routes>

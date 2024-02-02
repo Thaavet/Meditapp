@@ -3,10 +3,12 @@ import './home.css';
 import thumbnail_1 from '../images/meditations.png';
 import thumbnail_2 from '../images/screen.png';
 import thumbnail_3 from '../images/screen3.png';
+import { Helmet } from 'react-helmet';
 export const Home = () => {
   return (
+    
     <div className='home-container'>
-
+      <Helmet><title>Home - Meditapp</title></Helmet>
      <div className='why'> 
      <img className='banner' src={thumbnail_1} alt="meditation" />
       <h3> Why Meditation </h3>
