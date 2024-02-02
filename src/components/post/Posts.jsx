@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import PostItem from './PostItem';
-import thumbnail_1 from './images/thumbnail_1.jpg';
-import thumbnail_2 from './images/thumbnail_2.jpg';
-import thumbnail_3 from './images/thumbnail_3.jpg';
-import thumbnail_4 from './images/thumbnail_4.jpg';
-import thumbnail_5 from './images/thumbnail_5.jpg';
+import thumbnail_1 from "../../images/thumbnail_1.jpg";
+import thumbnail_2 from '../../images/thumbnail_2.jpg';
+import thumbnail_3 from '../../images/thumbnail_3.jpg';
+import thumbnail_4 from '../../images/thumbnail_4.jpg';
+import thumbnail_5 from '../../images/thumbnail_5.jpg';
 
 const MediPosts = [
   

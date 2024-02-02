@@ -1,0 +1,36 @@
+*{  align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-name, .form-email, .form-message, .form-send {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }

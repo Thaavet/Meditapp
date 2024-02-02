@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css';
 import thumbnail_1 from '../images/meditations.png';
 import thumbnail_2 from '../images/screen.png';
 import thumbnail_3 from '../images/screen3.png';
@@ -27,4 +28,3 @@ Meditation is a practice that can bring many benefits to your daily life. Accord
     </div>
   )
 }
-

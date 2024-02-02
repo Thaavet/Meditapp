@@ -1,5 +1,6 @@
 import React from "react";
-import { Posts } from "../Posts";
+import { Posts } from "../components/post/Posts";
+import '../components/post/post.css'
 
 
 function About() {

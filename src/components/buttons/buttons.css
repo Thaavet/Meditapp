@@ -1,0 +1,47 @@
+button.Playbutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: green;
+    border: 0;
+    width: 40%;
+  }
+  
+  button.Confirmbutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: green;
+    border: 0;
+    width: 30%;
+  }
+  
+  button.Backbutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: red;
+    border: 0;
+    width: 30%;
+  }
+  
+  button.Pausebutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: red;
+    border: 0;
+    width: 40%;
+  }
+  
+  button.Settingsbutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 0;
+    width: 40%;
+  }
+  
+  button.Restartbutton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: yellow;
+    border: 0;
+    width: 40%;
+  }

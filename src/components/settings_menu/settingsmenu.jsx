@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Confirmbutton from './confirmbtn';
-import Backbutton from './backbtn';
+import Confirmbutton from '../buttons/confirmbtn';
+import Backbutton from '../buttons/backbtn';
 
 function SettingsMenu(props) {
   const { sessionDuration, onSetDuration, onCloseSettings } = props;

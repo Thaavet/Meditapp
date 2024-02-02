@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './navbar.jsx';
-import Timer from './timer.jsx';
+import './components/buttons/buttons.css';
+import Navbar from './components/navbar/navbar.jsx';
+import Timer from './components/timer/timer.jsx';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About.jsx';
 import { Home } from './pages/Home.jsx';
 import { Contacts } from './pages/Contacts.jsx';
-import Footer from './footer.jsx';
+import Footer from './components/footer/footer.jsx';
 
 function App() {
  

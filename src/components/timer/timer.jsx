@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import SettingsMenu from './settingsmenu';
-import Pausebutton from './pausebtn';
-import Playbutton from './playbtn';
-import SettingsButton from './settingsbtn';
-import RestartButton from './restartbtn';
+import '../buttons/buttons.css';
+import SettingsMenu from '../settings_menu/settingsmenu.jsx';
+import Pausebutton from '../buttons/pausebtn';
+import Playbutton from '../buttons/playbtn';
+import SettingsButton from '../buttons/settingsbtn';
+import RestartButton from '../buttons/restartbtn';
 
 const green = '#4aec8c';
 
@@ -66,7 +67,7 @@ function PomodoroTimer() {
 
   return (
     <div>
-      <div>
+      <div className='timerdiv'>
         <CircularProgressbar
           value={(timeRemaining / (sessionDuration * 60)) * 100}
           text={`${Math.floor(timeRemaining / 60).toString().padStart(2, '0')}:${(timeRemaining % 60).toString().padStart(2, '0')}`}
